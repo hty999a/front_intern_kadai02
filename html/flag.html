@@ -1,2 +1,79 @@
-国旗をHTML/CSSで作成してみよう
-<h1>これが日本国旗だ</h1>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- internet explorerの互換モードを無効 -->
+    <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0">
+    <!-- width=device-width は幅をデバイスの幅に合わせる -->
+    <!-- user-scalable=yes は利用者が画面サイズを調整できる機能を有効にする -->
+    <!-- initial-scale=1.0 は初期表示倍率は1.0 -->
+    <title>国旗</title>
+    <link rel="stylesheet" href="../css/flag.css">
+</head>
+
+<body>
+    <div class="kadai">国旗をHTML/CSSを作成してみよう</div>
+    <section>
+        <h2 class="country_name">日本</h2>
+        <div class="flag-base_2-3 japan-pos">
+            <!-- flag-base_2-3 japan-posという二つのクラスを指定
+                flag-base_2-3は旗の大きさを指定
+                japan-posは下地を準備 -->
+            <div class="japan-circle middle"></div>
+            <!-- japan-circle middleという二つのクラスを指定
+                japan-circleは日本の赤丸部分を準備
+                middleはそれを真ん中に設置 -->
+        </div>
+    </section>
+    <section>
+        <h2 class="country_name">UAE</h2>
+        <div class="flag-base_1-2 uae-pos">
+            <div class="stripe uae-red"></div>
+            <div class="border green"></div>
+            <div class="border white"></div>
+            <div class="border black"></div>
+        </div>
+    </section>
+    <section>
+        <h2 class="country_name">韓国</h2>
+        <div class="flag-base_2-3 korea-pos">
+            <div class="upper-left box">
+                <div class="big-rectangle"></div>
+                <div class="big-rectangle"></div>
+                <div class="big-rectangle"></div>
+            </div>
+            <div class="upper-right box">
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="big-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+            </div>
+            <div class="lower-right box ">
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+            </div>
+            <div class="lower-left box">
+                <div class="big-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="small-rectangle"></div>
+                <div class="big-rectangle"></div>
+            </div>
+            <div class="middle-circle">
+                <div class="semicircle-upper korean-red"></div>
+                <div class="semicircle-lower blue"></div>
+                <div class="left-circle mini-circle korean-red"></div>
+                <div class="right-circle mini-circle blue"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
